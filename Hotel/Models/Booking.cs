@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 
 namespace Hotel.Models
 {
-    public enum BookingStatus
-    {
-        Cancelled,
-        CheckedIn,
-        CheckedOut
-    }
     public class Booking
     {
         public int Id { get; set; }
@@ -19,8 +13,6 @@ namespace Hotel.Models
         public int RoomId { get; set; }
         public DateTime DateStart { get; set; }
         public DateTime DateEnd { get; set; }
-        public BookingStatus Status { get; set; }
         public decimal TotalPrice { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

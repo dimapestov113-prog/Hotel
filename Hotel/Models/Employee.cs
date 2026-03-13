@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 
 namespace Hotel.Models
 {
-    public enum EmployeeRole
-    {
-        Manager,
-        Administrator,
-        Cleaner
-    }
     public class Employee
     {
         public int Id { get; set; }
@@ -21,7 +15,6 @@ namespace Hotel.Models
         public string Phone { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public EmployeeRole Role { get; set; }
-        public bool IsActive { get; set; }
+        public string Role { get; set; } = "Administrator";
     }
 }
