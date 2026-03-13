@@ -16,7 +16,7 @@ namespace Hotel
         public DbSet<Booking> Bookings { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source =../../../Hotel.db");
+            optionsBuilder.UseSqlite("Data Source =../../../HotelTest.db");
         }
     }
 }
